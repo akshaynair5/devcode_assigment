@@ -1,6 +1,13 @@
 .App {
   text-align: center;
 }
+body{
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Dosis', sans-serif;
+  font-family: 'Golos Text', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Raleway', sans-serif;
+}
 
 .App-logo {
   height: 40vmin;

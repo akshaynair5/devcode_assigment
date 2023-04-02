@@ -31,8 +31,8 @@ function Home(){
                         <div className='News' onClick={()=>{moreInfo(news)}}>
                             <img src={news.urlToImage} className='np'></img>
                             <div className='content'>
-                                <p className='Headline'>{news.title}</p>
-                                <p className='news'>{news.description}</p>
+                                <p className='headline'>{news.title}</p>
+                                <p className='author'><b>Author - </b> {news.author},   <b>Published At - </b>{news.publishedAt}</p>
                             </div>
                         </div>
                     ))
@@ -40,9 +40,11 @@ function Home(){
             </div>
             <div className="popupInfo" style={{visibility:`${vis}`}} onClick={()=>{setVis('hidden')}}>
                 <div className='popupcontent' style={{backgroundImage:`url(${moreinfo.urlToImage})`}}>
-                    <p>{moreInfo.title}</p>
-                    <p>{moreInfo.content}</p>
-                    <Link to={`${moreInfo.url}`}>Click to Visit full article</Link>
+                    <div className='content'>
+                        <p className='headline'>{moreinfo.title}</p>
+                        <p className='news'>{moreinfo.content}</p>
+                        <Link to={`${moreInfo.url}`}>Click to Visit full article</Link>
+                    </div>
                 </div>
             </div>
         </div>
