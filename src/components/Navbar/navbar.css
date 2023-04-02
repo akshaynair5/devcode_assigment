@@ -38,3 +38,12 @@
 .links:hover{
     color: cadetblue;
 }
+@media screen and (max-width:550px){
+    .dp{
+        width:15%;
+        right:30%;
+    }
+    .logout{
+        width:22%;
+    }
+}
