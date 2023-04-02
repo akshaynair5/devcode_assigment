@@ -1,0 +1,49 @@
+.Home{
+    position: fixed;
+    height: 100%;
+    width:100%;
+}
+.NewsBlock{
+    position: absolute;
+    top:15%;
+    width:90%;
+    background-color: aliceblue;
+    height: 75%;
+    left:5%;
+    border-radius: 25px;
+    overflow-y: scroll;
+}
+.News{
+    margin: 1%;
+    display: flex;
+    background-color: black;
+    min-height: 20%;
+    max-height: 30%;
+    border-radius: 25px;
+    color:aliceblue;
+    cursor: pointer;
+}
+.content{
+    align-self: center;
+    margin-left: 3%;
+}
+.News .np{
+    height: 10%;
+    width: 10%;
+}
+.popupInfo{
+    position: fixed;
+    z-index: 3;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.415);
+}
+.popupcontent{
+    position: absolute;
+    left:15%;
+    width: 70%;
+    min-height: 50%;
+    top:10%;
+    max-height: 60%;
+
+}
