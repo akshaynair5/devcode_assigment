@@ -85,12 +85,37 @@
     font-size: 45px;
     font-weight: 700;
 }
+.pag-btns{
+    display: flex;
+    padding: 2%;
+}
+.pag-btns button{
+    padding: 1%;
+    border-radius: 25px;
+    font-size: 35px;
+    cursor: pointer;
+    background-color: #24282e;
+    color: aliceblue;
+    border: none;
+    align-self: center;
+    position: relative;
+    margin-left:2% ;
+    left:28%;
+    width: 20%;
+}
+.pag-btns button:hover{
+    color:cadetblue
+}
 @media screen and (max-width:550px){
     .News{
         min-height: 45%;
-        max-height: 50%;
+        max-height: 60%;
         display: flex;
         flex-direction: column;
+        margin-bottom: 5%;
+    }
+    .content{
+        padding: 5%;
     }
     .np{
         height: 150px;
@@ -116,5 +141,11 @@
         color: aliceblue;
         border-radius: 25px;
     
+    }
+    .pag-btns button{
+        left:20%;
+        font-size: 20px;
+        width:30%;
+        padding: 2%;
     }
 }
