@@ -28,7 +28,8 @@
   }
   
 .NewsBlock::-webkit-scrollbar-thumb {
-    background-color: black
+    background-color:#24282e;
+    border-radius:25px;
   }
 .News{
     margin: 1%;

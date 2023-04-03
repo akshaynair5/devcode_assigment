@@ -14,10 +14,11 @@
     border-radius: 25px;
     font-size: 20px;
     background-color: black;
-    color:aliceblue
+    color:aliceblue;
+    border: none;
 }
 .logout:hover{
-    color: cadetblue;
+    color: red;
     cursor: pointer;
 }
 .dp{

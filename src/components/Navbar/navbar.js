@@ -16,7 +16,7 @@ function Navbar(){
             <Link to='/Home' className="links">Home</Link>
             <Link to='/About'  className="links">About</Link>
             <img src={currentUser.photoURL} className="dp"></img>
-            <button onClick={()=>signOut(auth)} className="logout">LogOut</button>
+            <button onClick={()=>signOut(auth)} className="logout">Logout</button>
         </div>
     )
 }
