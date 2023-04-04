@@ -1,6 +1,6 @@
 import './home.css'
 import Navbar from '../../components/Navbar/navbar'
-import { useContext, useEffect, useState } from 'react'
+import { useContext, useEffect, useRef, useState } from 'react'
 import { Authcontext } from '../../contextprovider'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
@@ -1313,7 +1313,7 @@ function Home(){
     const [latest10,set10] = useState([])
     const [moreinfo,setMoreinfo] = useState({})
     const [vis,setVis] = useState('hidden')
-    // const anchor = document.querySelector('#pui')
+    const pui = useRef(null)
     useEffect(()=>{
         // axios.get('https://newsapi.org/v2/everything?q=tesla&from=2023-03-03&sortBy=publishedAt&apiKey=2c74cb196ef84ccdbafe4f22fa7acba3')
         //     .then((response)=>{
@@ -1342,7 +1342,10 @@ function Home(){
         let temp = news.slice(i-10,i)
         console.log(temp)
         set10(temp)
-        // anchor.scrollIntoView({ behavior: 'smooth', block:'start' })
+        window.scrollTo({
+            top:pui.current.offsetTop,
+            behavior: "smooth"
+        })
     },[i])
     return(
         <div className="Home">
@@ -1369,7 +1372,8 @@ function Home(){
                     }
                 </div>
             </div>
-            <div className="popupInfo" style={{visibility:`${vis}`}} onClick={()=>{setVis('hidden')}} id="pui">
+            <div className="popupInfo" style={{visibility:`${vis}`}} onClick={()=>{setVis('hidden')}} ref={pui}>
+                <button onClick={()=>{setVis('hidden')}}>X</button>
                 <div className='popupcontent' style={{backgroundImage:`url(${moreinfo.urlToImage})`}}>
                     <div className='content'>
                         <p className='headline'>{moreinfo.title}</p>

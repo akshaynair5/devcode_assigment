@@ -14,6 +14,7 @@
     overflow-y: scroll;
     box-shadow: rgba(223, 222, 222, 0.35) 5px 15px 25px;
     transition: 0.5s ease;
+    padding-top: 2%;
 }
 .NewsBlock:hover{
     box-shadow: rgba(255, 255, 255, 0.35) 10px 20px 30px;
@@ -103,6 +104,17 @@
     left:28%;
     width: 20%;
 }
+.popupInfo button{
+    position: relative;
+    left:90%;
+    width:10%;
+    font-size: 45px;
+    font-weight: 800;
+    color: aliceblue;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
 .pag-btns button:hover{
     color:cadetblue
 }
@@ -147,5 +159,8 @@
         font-size: 20px;
         width:30%;
         padding: 2%;
+    }
+    .popupInfo button{
+        display: none;
     }
 }
