@@ -5,6 +5,7 @@ import { Login,Register } from './pages/register-login/login-register';
 import {Authcontext} from '../src/contextprovider'
 import { useContext } from 'react';
 import { Navigate } from 'react-router-dom';
+import About from './pages/About/about';
 
 function App() {
   const {currentUser} = useContext(Authcontext)
@@ -24,6 +25,7 @@ function App() {
         <Route path="/home" element={<ProtectedRoute><Home/></ProtectedRoute>} ></Route>
         <Route path="Login" element={<Login/>}></Route>
         <Route path="Register" element={<Register/>}></Route>
+        <Route path="/About" element={<About/>}></Route>
       </Routes>
     </Router>
   );

@@ -1,0 +1,33 @@
+.Ab{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+}
+.About::-webkit-scrollbar {
+    width: 8px;
+    background-color: rgba(0, 128, 0, 0);
+  }
+  
+.About::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+.About::-webkit-scrollbar-thumb {
+    background-color:#24282e;
+    border-radius:25px;
+  }
+.About{
+    position: absolute;
+    top:15%;
+    width:90%;
+    padding:2%;
+    left:3%;
+    background-color: aliceblue;
+    border-radius: 25px;
+    font-size:25px;
+    height: 70%;
+    overflow-y: scroll;
+}
+.Socials a{
+    margin: 2%;
+}
