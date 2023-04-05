@@ -14,11 +14,11 @@ function Home(){
     const [vis,setVis] = useState('hidden')
     const pui = useRef(null)
     useEffect(()=>{
-        axios.get('https://newsapi.org/v2/everything?q=tesla&from=2023-03-03&sortBy=publishedAt&apiKey=2c74cb196ef84ccdbafe4f22fa7acba3')
-            .then((response)=>{
-                console.log(response.data.articles)
-                setNews(response.data.articles)
-            })
+        axios.get('https://newsapi.org/v2/everything?q=tesla&from=2023-03-05&sortBy=publishedAt&apiKey=d3750bcc6383482d8d76b4b0e61413c4')
+        .then((response)=>{
+            console.log(response.data.articles)
+            setNews(response.data.articles)
+        })
         let temp = []
         temp = news.slice(i-10,i)
         console.log(temp)
