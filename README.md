@@ -1,70 +1,8 @@
-# Getting Started with Create React App
+# Dev Code Assignment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<img width="960" alt="image" src="https://user-images.githubusercontent.com/108605741/230037032-53cc7d79-6b66-4f44-ba5a-96023a3ed862.png">
+Home page 
+<p>Hi I am Akshay Mathilakath Nair, For the assignment round of the selection process for <b>Dev code</b> Internship I have created a NEWS website that incorporates all the mentioned features in the following ways-<br></br><br></br><br></br><b>Component lifecycle : </b> As i have used functional components for this project I have made use of the useEffect Hook in react as a substitute for lifecycle functions. Hence cleanup function are implemented within useEffect functions by giving a return statement within useEffect etc.<br></br><br></br><b>Router : </b>The React browser Router has also been implemented within this project as it is used to navigate between the various pages like Login,Register,Home,About page etc.<br></br><br></br><b>Context : </b>The react Context feature has also been implemented as it has been used for storing the details of the currently signed in user which is taken from firebase as this information is to be used all over project within different components.<br></br><br></br><b>Hooks : </b>As functional components have been used throughout this project Hooks like useState,useEffect,useContext,useNavigate,useRef etc have been repeatedly used.<br></br><br></br><b>Token : Firebase authentication has been used for authentication and User data security</b><br></br><br></br><b>Rest API : </b>For this NEWS website I have used a free API service - newsapi.org hence making use of a REST API and collecting information in the form of JSON.<br></br><br></br><b>Axios : </b>Axios has also been used to get the required JSON data from the API - Axios.get()<br></br><br></br><b>Firebase Login : </b>This feature also has been Implemented as the firebase login with Email and password has been using for authentication also the user details has been stored within the collection - 'users' using firestore <br></br><br></br><b>Pagination : </b>This feature has also been implemented as the daily NEWS has been split into group of 10 news at a time with the ability to move to previous and load more news from the next page.</p>
+                
 
-## Available Scripts
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
