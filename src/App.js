@@ -21,9 +21,9 @@ function App() {
   }
   return (
     <Router>
-      <Routes>
+      <Routes basename="/devcode_assigment">
         <Route path="/home" element={<ProtectedRoute><Home/></ProtectedRoute>} ></Route>
-        <Route path="Login" element={<Login/>}></Route>
+        <Route path="/devcode_assigment" element={<Login/>}></Route>
         <Route path="Register" element={<Register/>}></Route>
         <Route path="/About" element={<About/>}></Route>
       </Routes>

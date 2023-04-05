@@ -89,7 +89,7 @@ function Register (){
                 <input id="Fl" type="file" placeholder="file" style={{display:'none'}} required></input>
                 <input type="submit" id="S" value="Register"></input>
                 {err && <span style={{alignSelf:'center'}}>Something went wrong, Try Again</span>}
-                <p style={{width:'26%'}}>Have an Account? <b><Link style={{marginLeft:'2%',textDecoration:'none'}} to="/login">Login Now</Link></b></p>
+                <p style={{width:'26%'}}>Have an Account? <b><Link style={{marginLeft:'2%',textDecoration:'none'}} to="/devcode_assigment">Login Now</Link></b></p>
             </form>
         </div>
     )
