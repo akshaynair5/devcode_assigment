@@ -48,8 +48,10 @@
     margin-left: 3%;
 }
 .np{
-    height: 230px;
-    width:500px;
+    min-height: 15%;
+    max-height: 15%;
+    /* width:500px; */
+    width:22%;
     align-self: center;
     border-radius: 25px;
     margin-left: 1%;
