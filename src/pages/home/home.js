@@ -16,14 +16,14 @@ function Home(){
     useEffect(()=>{
         axios.get('https://newsapi.org/v2/everything?q=tesla&from=2023-03-05&sortBy=publishedAt&apiKey=d3750bcc6383482d8d76b4b0e61413c4')
         .then((response)=>{
-            console.log(response.data.articles)
             setNews(response.data.articles)
         })
+    },[])
+    useEffect(()=>{
         let temp = []
         temp = news.slice(i-10,i)
-        console.log(temp)
         set10(temp)
-    },[])
+    },[news])
     const moreInfo = (news)=>{
         setMoreinfo(news)
         setVis('visible')
@@ -35,11 +35,7 @@ function Home(){
         seti(i-10)
     }
     useEffect(()=>{
-        console.log(i)
-    },[i])
-    useEffect(()=>{
         let temp = news.slice(i-10,i)
-        console.log(temp)
         set10(temp)
         window.scrollTo({
             top:pui.current.offsetTop,

@@ -7,9 +7,6 @@ import { auth } from "../../firebaseconfig";
 
 function Navbar(){
     const {currentUser} = useContext(Authcontext)
-    useEffect(()=>{
-        console.log(currentUser.email)
-    })
 
     return(
         <div className="Navbar">
