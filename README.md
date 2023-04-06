@@ -3,6 +3,10 @@
 <img width="960" alt="image" src="https://user-images.githubusercontent.com/108605741/230037032-53cc7d79-6b66-4f44-ba5a-96023a3ed862.png">
 Home page 
 
+On clicking the a single news more details will be shown within a popup window
+<img width="960" alt="image" src="https://user-images.githubusercontent.com/108605741/230297123-10a707ba-d84c-4fb0-9336-b34ba836b1df.png">
+
+
 <img width="960" alt="image" src="https://user-images.githubusercontent.com/108605741/230106577-dfff497c-cbb3-41cf-9023-5175a0a825bc.png">
 Pagination Implementation
 
